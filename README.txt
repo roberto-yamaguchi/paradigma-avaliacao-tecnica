@@ -1,5 +1,5 @@
 
-==== SQL DA BASE ====
+==== SQL DA BASE (SQL SERVER) ====
 
 
 /* Tabela Departamento */
@@ -65,7 +65,7 @@ SELECT * FROM Departamento D;
 -- PESSOA
 SELECT * FROM Pessoa P;
 
--- COLABORADOR COM MAIOR SAL¡RIO POR DEPARTAMENTO
+-- COLABORADOR COM MAIOR SAL√ÅRIO POR DEPARTAMENTO
 SELECT D.Nome Departamento, P.Nome Pessoa, P.Salario Salario FROM Pessoa P
 JOIN Departamento D ON P.DepartamentoId = D.Id
 WHERE Salario IN (SELECT MAX(Salario) FROM Pessoa GROUP BY DepartamentoId);
