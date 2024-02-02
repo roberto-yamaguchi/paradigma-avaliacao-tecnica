@@ -1,0 +1,23 @@
+﻿@model IEnumerable<AvaliacaoTecnica.Models.Pessoa>
+
+<h2>Lista de Pessoas</h2>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Salário</th>
+        <th>Departamento</th>
+    </tr>
+
+    @foreach (var pessoa in Model)
+    {
+        <tr>
+            <td>@pessoa.Id</td>
+            <td>@pessoa.Nome</td>
+            <td>@pessoa.Salario.ToString("C")</td>
+            <td>@pessoa.Departamento.Nome</td>
+        </tr>
+    }
+</table>
+

@@ -1,0 +1,21 @@
+﻿@model List<IEnumerable<AvaliacaoTecnica.Models.Pessoa>>
+
+<h2>Maior Salário por Departamento</h2>
+
+<table class="table">
+    <tr>
+        <th>Departamento</th>
+        <th>Pessoa</th>
+        <th>Salário</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Departamento</td>
+            <td>@item.Pessoa</td>
+            <td>@item.Salario</td>
+        </tr>
+    }
+</table>
+

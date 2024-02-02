@@ -1,0 +1,19 @@
+﻿@model IEnumerable<AvaliacaoTecnica.Models.Departamento>
+
+<h2>Lista de Departamentos</h2>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+    </tr>
+
+    @foreach (var departamento in Model)
+    {
+        <tr>
+            <td>@departamento.Id</td>
+            <td>@departamento.Nome</td>
+        </tr>
+    }
+</table>
+

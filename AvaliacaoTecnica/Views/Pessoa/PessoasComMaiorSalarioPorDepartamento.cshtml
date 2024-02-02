@@ -1,0 +1,20 @@
+﻿@model IEnumerable<AvaliacaoTecnica.Models.Pessoa>
+
+<h2>Maior Salário por Departamento</h2>
+
+<table class="table">
+    <tr>
+        <th>Departamento</th>
+        <th>Pessoa</th>
+        <th>Salário</th>
+    </tr>
+
+    @foreach (var pessoa in Model)
+    {
+        <tr>
+            <td>@pessoa.Departamento.Nome</td>
+            <td>@pessoa.Nome</td>
+            <td>@pessoa.Salario.ToString("C")</td>
+        </tr>
+    }
+</table>
